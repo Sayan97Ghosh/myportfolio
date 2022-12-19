@@ -22,7 +22,7 @@ const Hero = () => {
             <p className="pt-4 pb-8 md:pt-6 md:pb-12 max-w-[480px] text-lg text-center lg:text-left">
               
             </p>
-            <a href="https://drive.google.com/file/d/1ZgrbaxK6Gsw3xc5aVJaGKAkhj75vMODj/view?usp=sharing" target="_blank">
+            <a href="https://drive.google.com/u/0/uc?id=1ZgrbaxK6Gsw3xc5aVJaGKAkhj75vMODj&export=download">
               <button className="btn btn-md bg-accent hover:bg-secondary-hover md:btn-lg transition-all">
                 Resume
               </button>

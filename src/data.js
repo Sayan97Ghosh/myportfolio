@@ -324,6 +324,7 @@ export const contact = [
   {
     icon: <FiMail />,
     title: "Have a question?",
+    phone:"+91 8145927411",
     subtitle: "I am here to help you.",
     description: "Email me at :- sayanghosh97x@gmail.com",
   },

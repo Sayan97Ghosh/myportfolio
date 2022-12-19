@@ -44,7 +44,7 @@ const NavMobile = () => {
   };
 
   return (
-    <nav className='relative'>
+    <nav  className='relative'>
       <div
         onClick={() => setIsOpen(true)}
         className='cursor-pointer text-white'
@@ -66,7 +66,7 @@ const NavMobile = () => {
         animate={isOpen ? 'visible' : ''}
         className={`${
           isOpen ? 'right-0' : '-right-full'
-        } fixed top-0 bottom-0 w-full flex flex-col justify-center items-center transition-all duration-300 overflow-hidden`}
+        } fixed top-0 bottom-0  h-full w-full flex flex-col justify-center items-center transition-all duration-300 `}
       >
         <div
           onClick={() => setIsOpen(false)}
@@ -74,21 +74,25 @@ const NavMobile = () => {
         >
           <XIcon className='w-8 h-8' />
         </div>
+        <ul>
         {navigation.map((item, idx) => {
           return (
-            <li key={idx} className='mb-8'>
+            
+              <li onClick={()=> setIsOpen(false)}  key={idx} style={{marginTop:"20px"}}>
               <Link
                 to={item.href}
                 smooth={true}
                 duration={500}
                 offset={-70}
-                className='text-xl cursor-pointer capitalize'
+                className='px-4 cursor-pointer capitalize font-medium text-white-500 hover:scale-105 duration-200'
               >
                 {item.name}
               </Link>
-            </li>
+              </li>
+           
           );
         })}
+        </ul>
         <Socials />
       </motion.ul>
     </nav>
