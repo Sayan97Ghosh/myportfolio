@@ -28,7 +28,7 @@ const NavMobile = () => {
       transition: {
         type: 'spring',
         stiffness: 160,
-        damping: 60,
+        damping: 120,
       },
     },
   };
@@ -78,7 +78,7 @@ const NavMobile = () => {
         {navigation.map((item, idx) => {
           return (
             
-              <li onClick={()=> setIsOpen(false)}  key={idx} style={{marginTop:"20px"}}>
+              <li onClick={()=> setIsOpen(false)}  key={idx} style={{marginTop:"40px"}}>
               <Link
                 to={item.href}
                 smooth={true}

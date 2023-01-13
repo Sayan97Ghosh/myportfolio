@@ -23,7 +23,7 @@ import DribbbleBrandIcon from "./assets/img/brands/dribbble.png";
 
 // projects images
 import Project1 from "./assets/img/projects/pr1.jpeg";
-import Project2 from "./assets/img/projects/pr2.jpeg";
+import Project2 from "./assets/img/projects/pr2.png";
 import Project3 from "./assets/img/projects/pr3.jpeg";
 import Project7 from "./assets/img/projects/p7.png";
 import Project8 from "./assets/img/projects/p8.png";
@@ -73,7 +73,7 @@ export const navigation = [
   },
   {
     name: "resume",
-    href: "home",
+    href: "https://drive.google.com/u/0/uc?id=1ZgrbaxK6Gsw3xc5aVJaGKAkhj75vMODj&export=download",
     
   },
 ];
@@ -81,11 +81,11 @@ export const navigation = [
 // social
 export const social = [
   {
-    icon: <FiGithub />,
+    icon: <FiGithub size={32} />,
     href: "https://github.com/Sayan97Ghosh",
   },
   {
-    icon: <FiLinkedin />,
+    icon: <FiLinkedin size={32} />,
     href: "https://www.linkedin.com/in/sayan-ghosh-8a09ab246/",
   },
 ];
@@ -133,11 +133,11 @@ export const projectsData = [
   {
     id: "2",
     image: Project2,
-    name: "Sephora.nnow.com Clone",
-    category: "TECH STACKS : Reactjs,ChakraUI,Firebase,Redux",
-    source:"https://github.com/Arun-Jawlia/Arun-Jawlia-wiggly-stick-3716",
-    live:"https://velvety-medovik-23acf5.netlify.app/",
-    despo:"Sephora is a global beauty chain that offers a wide range of classic and emerging brands in makeup, skincare, fragrance, body care and haircare categories"
+    name: "Fashion-Mart.Com",
+    category: "TECH STACKS : Reactjs,ChakraUI,Firebase,Redux,MongoDB",
+    source:"https://github.com/udhai-20/FashionMart",
+    live:"https://myfashionmart-app.vercel.app",
+    despo:"Fashion-Mart's patented technology works endlessly and effortlessly to pull from the digital racks of our 500+ trusted retail partners and 12,000+ luxury brands to connect consumers with their favorite pieces."
   },
   {
     id: "3",

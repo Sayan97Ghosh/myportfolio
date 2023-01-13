@@ -17,7 +17,7 @@ const Testimonials = () => {
             labore nisium illum cupiditate reiciendis a numquam
           </p>
         </div>
-        <TestiSlider />
+        <TestiSlider/>
       </div>
     </section>
   );
