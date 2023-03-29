@@ -2,12 +2,12 @@ import React from 'react';
 
 const Project = ({ item }) => {
   return (
-    <div key={item.id} className='flex flex-col items-center text-center'>
-      <div className='mb-8 h-4xl'>
-        <img className='rounded-2xl' src={item.image} alt='' />
+    <div   key={item.id} className='flex flex-col items-center text-center drop-shadow-lg  p-3 rounded '>
+      <div className='mb-4 h-2xl   '>
+        <img className='rounded-2xl w-300 ease-in-out duration-300 h-xl' src={item.image} alt='' />
       </div>
       <p className='capitalize text-accent text-md mb-3'>{item.category}</p>
-      <h3 className='text-2xl font-semibold capitalize mb-3'>{item.name}</h3>
+      <h3 className='text-2xl font-semibold capitalize mb-3 p-2'>{item.name}</h3>
       <p  className='text-base max-w-md capitalize text-black '>
       {item.despo}
       </p>

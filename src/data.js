@@ -22,13 +22,15 @@ import BehanceBrandIcon from "./assets/img/brands/behance.png";
 import DribbbleBrandIcon from "./assets/img/brands/dribbble.png";
 
 // projects images
-import Project1 from "./assets/img/projects/pr1.jpeg";
+
 import Project2 from "./assets/img/projects/pr2.png";
 import Project3 from "./assets/img/projects/pr3.jpeg";
 import Project7 from "./assets/img/projects/p7.png";
 import Project8 from "./assets/img/projects/p8.png";
-import Project5 from "./assets/img/projects/p51.webp";
-import Project6 from "./assets/img/projects/p6.webp";
+import Project5 from "./assets/img/projects/p5.png";
+import Project6 from "./assets/img/projects/p6.png";
+import Project1 from "./assets/img/projects/p1.png";
+
 
 // skills images
 import SkillImg1 from "./assets/img/skills/html5.png";
@@ -117,19 +119,22 @@ export const brands = [
 
 // projects
 export const projectsData = [
+  
+  
+ 
+ 
+
+  
+
   {
     id: "1",
-    image: Project8,
-    name: "Bitrix24.com Clone",
-    category: "TECH STACKS: HTML, Css, Javascript, Advance Css",
-    source:"https://github.com/arupadhyay25/Betrix24-App-Clone",
-    live:"https://betrix24.netlify.app/",
-    despo: "Bitrix24 is a collaboration software with complete tools for management, collaboration, and communication. Bitrix24 gives you a unified platform for your all workflow and documents etc. "
-    
-    
-    
+    image: Project1,
+    name: "Insight-Central Blog Writing Website",
+    category: "TECH STACKS:Next.js,Mogodb,Chakra ui,Mongoose,Express,Css,Javascript,",
+    source:"https://github.com/arupadhyay25/Insight-Central",
+    live:"https://insight-central.vercel.app/",
+    despo:" Insight-Central is an informational website published on the World Wide Web. Posts are typically displayed in reverse chronological order so that the most recent post appears first, at the top of the web page."
   },
-  
   {
     id: "2",
     image: Project2,
@@ -140,16 +145,16 @@ export const projectsData = [
     despo:"Fashion-Mart's patented technology works endlessly and effortlessly to pull from the digital racks of our 500+ trusted retail partners and 12,000+ luxury brands to connect consumers with their favorite pieces."
   },
   {
-    id: "3",
-    image: Project3,
-    name: "Weather App",
-    category: "TECH STACKS: HTML, Css, Javascript, Advance Css",
-    source:"https://github.com/Sayan97Ghosh/Weather_App-Geo_Location-/tree/main/Weather%20Application%204",
-    live:"https://stirring-crumble-2ce13e.netlify.app",
+    id: "4",
+    image: Project6,
+    name: "Nft Music Player",
+    category: "TECH STACKS: React,Solidity,Blockchain,web3.0",
+    source:"https://github.com/Sayan97Ghosh/Nft-Music-App",
+    live:"https://github.com/Sayan97Ghosh/Nft-Music-App",
     despo:"This weather app is one of best free weather apps with full features: Local weather, weather map (weather map service) and weather widgets"
   },
   {
-    id: "4",
+    id: "3",
     image: Project7,
     name: "Firstpost.com",
     category: "TECH STACKS: Reactjs,ChakraUI,Nodejs",
@@ -157,16 +162,39 @@ export const projectsData = [
     live:"https://fabulous-figolla-a1702b.netlify.app",
     despo:"Firstpost is an Indian online news and media website. The site is a part of the Network 18 media conglomerate owned by Reliance Industries, which also runs CNN-News18 and CNBC-TV18.[1]"
   },
+  
+{
+  id: "5",
+  image: Project5,
+  name: "Flappy Bird Game",
+  category: "TECH STACKS: HTML, Css, Javascript, Advance Css",
+  source:"https://github.com/Sayan97Ghosh/flappy-bird-original",
+  live:"https://vocal-sunflower-bbccc2.netlify.app/",
+  despo:"Flappy Bird was a popular mobile game. The objective of the game is to guide a small bird through a series of obstacles by tapping the screen to make the bird flap its wings and stay in the air."
+},
+{
+  id: "6",
+  image: Project8,
+  name: "Bitrix24.com Clone",
+  category: "TECH STACKS: HTML, Css, Javascript, Advance Css",
+  source:"https://github.com/arupadhyay25/Betrix24-App-Clone",
+  live:"https://betrix24.netlify.app/",
+  despo: "Bitrix24 is a collaboration software with complete tools for management, collaboration, and communication. Bitrix24 gives you a unified platform for your all workflow and documents etc. "
 
-  // {
-  //   id: "6",
-  //   image: Project3,
-  //   name: "Weather App",
-  //   category: "TECH STACKS: HTML, Css, Javascript, Advance Css",
-  //   source:"https://github.com/masai-course/SHUBHOJEET_fp03_002/commit/0a2bb523a447cd379edbf6c64a21cfbb3f22daba",
-  //   live:"https://inquisitive-starship-8df0a6.netlify.app/",
-  //   despo:"This weather app is one of best free weather apps with full features: Local weather, weather map (weather map service) and weather widgets"
-  // },
+  
+},
+
+{
+  id: "7",
+  image: Project3,
+  name: "Weather App",
+  category: "TECH STACKS: HTML, Css, Javascript, Advance Css",
+  source:"https://github.com/Sayan97Ghosh/Weather_App-Geo_Location-/tree/main/Weather%20Application%204",
+  live:"https://stirring-crumble-2ce13e.netlify.app",
+  despo:"This weather app is one of best free weather apps with full features: Local weather, weather map (weather map service) and weather widgets"
+},
+
+
   // {
   //  image: <img src="https://github-readme-stats.vercel.app/api?username=shubhojeet1&show_icons=true&locale=en&theme=radical" alt="monumarquis" height="139" />,
        
