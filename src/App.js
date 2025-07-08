@@ -25,9 +25,6 @@ const App = () => {
       <Github/>
       <Portfolio />
        {/* <Brands /> */}
-      
-      
-      
       {/* <Services /> */}
       {/* <Testimonials /> */}
       <Contact />

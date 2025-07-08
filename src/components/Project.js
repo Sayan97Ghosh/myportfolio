@@ -1,19 +1,56 @@
-import React from 'react';
-
 const Project = ({ item }) => {
   return (
-    <div   key={item.id} className='flex flex-col items-center text-center drop-shadow-lg  p-3 rounded '>
-      <div className='mb-4 h-2xl   '>
-        <img className='rounded-2xl w-300 ease-in-out duration-300 h-xl' src={item.image} alt='' />
+    <div
+      key={item.id}
+      className="flex flex-col items-start text-left drop-shadow-lg p-3 rounded w-full max-w-[320px] h-[520px] overflow-hidden"
+    >
+      {/* Image */}
+      <div className="mb-4 h-[180px] w-full overflow-hidden flex justify-center items-center">
+        <img
+          className="rounded-xl  h-full w-full transition duration-300 ease-in-out"
+          src={item.image}
+          alt={item.name}
+        />
       </div>
-      <p className='capitalize text-accent text-md mb-3'>{item.category}</p>
-      <h3 className='text-2xl font-semibold capitalize mb-3 p-2'>{item.name}</h3>
-      <p  className='text-base max-w-md capitalize text-black '>
-      {item.despo}
-      </p>
-      <div className='flex flex-row items-center text-center'>
-        <button className='mt-16 mr-5 py-3 px-5' style={{"backgroundColor":"green" ,"borderRadius":"10px","color":"#fff"}}><a href={item.source} target="_blank">Source code</a></button>
-        <button className='mt-16 mr-5 py-3 px-5' style={{"backgroundColor":"red","borderRadius":"10px","color":"#fff"}}><a href={item.live} target="_blank">Live demo</a></button>
+
+      {/* Category */}
+      <p className="capitalize text-accent text-md mb-2">{item.techStack}</p>
+
+      {/* Title */}
+      <h3 className="text-xl font-semibold capitalize mb-2">{item.name}</h3>
+
+      {/* Description */}
+      <p className="text-sm text-slate-700 mb-4">{item.despo}</p>
+
+      {/* Buttons */}
+      <div className="flex justify-center gap-3 mt-auto">
+        {/* Source Code Button */}
+        <a href={item.source} target="_blank" rel="noopener noreferrer">
+          <button
+            disabled={!item.source}
+            className={`py-2 px-4 text-white rounded-lg text-sm transition ${
+              item.source
+                ? "bg-green-600 hover:bg-green-700"
+                : "bg-gray-400 cursor-not-allowed"
+            }`}
+          >
+            Source Code
+          </button>
+        </a>
+
+        {/* Live Demo Button */}
+        <a href={item.live} target="_blank" rel="noopener noreferrer">
+          <button
+            disabled={!item.live}
+            className={`py-2 px-4 text-white rounded-lg text-sm transition ${
+              item.live
+                ? "bg-red-600 hover:bg-red-700"
+                : "bg-gray-400 cursor-not-allowed"
+            }`}
+          >
+            Live Demo
+          </button>
+        </a>
       </div>
     </div>
   );
