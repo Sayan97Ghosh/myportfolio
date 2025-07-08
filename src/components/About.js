@@ -30,13 +30,11 @@ const About = () => {
               <p className="mb-4 text-accent">Full-Stack Web Developer</p>
               <hr className="mb-8 opacity-5" />
               <p className="mb-8">
-                A passionate Full-Stack Web Developer from Masai School who's
-                always willing to learn and work across technology and domain. I
-                love to explore new technologies and leverage them to solve
-                real-life problems. <br />
-                <br />
-                I'm deep into the Web Development & looking forward to upgrade
-                my skills in a challenging work environment.
+                 A passionate and experienced Full-Stack Web Developer from Masai School with a strong foundation in the MERN stack.  
+                <br /><br />
+                Enthusiastic about AI and always eager to explore new technologies to solve real-world problems.  
+                <br /><br />
+                I thrive in fast-paced environments, love building scalable web apps, and continuously strive to grow as a developer.
               </p>
             </div>
             <Link

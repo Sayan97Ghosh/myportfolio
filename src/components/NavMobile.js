@@ -1,20 +1,20 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from "react";
 
 // import icons
-import { XIcon } from '@heroicons/react/outline';
-import { MenuAlt3Icon } from '@heroicons/react/outline';
+import { XIcon } from "@heroicons/react/outline";
+import { MenuAlt3Icon } from "@heroicons/react/outline";
 
 // import navigation data
-import { navigation } from '../data';
+import { navigation } from "../data";
 
 // import components
-import Socials from './Socials';
+import Socials from "./Socials";
 
 // import framer
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 // import Link
-import { Link } from 'react-scroll';
+import { Link } from "react-scroll";
 
 const NavMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +26,7 @@ const NavMobile = () => {
     visible: {
       scale: 180,
       transition: {
-        type: 'spring',
+        type: "spring",
         stiffness: 160,
         damping: 120,
       },
@@ -44,54 +44,81 @@ const NavMobile = () => {
   };
 
   return (
-    <nav  className='relative'>
+    <nav className="relative">
       <div
         onClick={() => setIsOpen(true)}
-        className='cursor-pointer text-white'
+        className="cursor-pointer text-white"
       >
-        <MenuAlt3Icon className='w-8 h-8' />
+        <MenuAlt3Icon className="w-8 h-8" />
       </div>
 
       {/* circle */}
       <motion.div
         variants={circleVariants}
-        initial='hidden'
-        animate={isOpen ? 'visible' : 'hidden'}
-        className='w-4 h-4 rounded-full bg-accent fixed top-0 right-0'
+        initial="hidden"
+        animate={isOpen ? "visible" : "hidden"}
+        className="w-4 h-4 rounded-full bg-accent fixed top-0 right-0"
       ></motion.div>
 
       <motion.ul
         variants={ulVariants}
-        initial='hidden'
-        animate={isOpen ? 'visible' : ''}
+        initial="hidden"
+        animate={isOpen ? "visible" : ""}
         className={`${
-          isOpen ? 'right-0' : '-right-full'
+          isOpen ? "right-0" : "-right-full"
         } fixed top-0 bottom-0  h-full w-full flex flex-col justify-center items-center transition-all duration-300 `}
       >
         <div
           onClick={() => setIsOpen(false)}
-          className='cursor-pointer absolute top-8 right-8'
+          className="cursor-pointer absolute top-8 right-8"
         >
-          <XIcon className='w-8 h-8' />
+          <XIcon className="w-8 h-8" />
         </div>
-        <ul>
-        {navigation.map((item, idx) => {
-          return (
-            
-              <li onClick={()=> setIsOpen(false)}  key={idx} style={{marginTop:"40px"}}>
-              <Link
-                to={item.href}
-                smooth={true}
-                duration={500}
-                offset={-70}
-                className='px-4 cursor-pointer capitalize font-medium text-white-500 hover:scale-105 duration-200'
+        <ul className="mt-10 top-10 absolute">
+          {navigation.map((item, idx) => {
+            return (
+              // <li className='flex justify-center items-center w-15' key={idx} style={{marginTop:"40px"}}>
+              // <Link
+              //   to={item.href}
+              //   smooth={true}
+              //   duration={500}
+              //   offset={-70}
+              //   onClick={()=> setIsOpen(false)}
+              //   className='cursor-pointer capitalize font-medium text-white-500 hover:scale-105 duration-200'
+              // >
+              //   {item.name}
+              // </Link>
+              // </li>
+              <li
+                key={idx}
+                className="flex justify-center items-center w-15"
+                style={{ marginTop: "40px" }}
               >
-                {item.name}
-              </Link>
+                {item.external ? (
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="cursor-pointer capitalize font-medium text-white-500 hover:scale-105 duration-200"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </a>
+                ) : (
+                  <Link
+                    to={item.href}
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                    onClick={() => setIsOpen(false)}
+                    className="cursor-pointer capitalize font-medium text-white-500 hover:scale-105 duration-200"
+                  >
+                    {item.name}
+                  </Link>
+                )}
               </li>
-           
-          );
-        })}
+            );
+          })}
         </ul>
         <Socials />
       </motion.ul>
