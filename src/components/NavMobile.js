@@ -77,18 +77,6 @@ const NavMobile = () => {
         <ul className="mt-10 top-10 absolute">
           {navigation.map((item, idx) => {
             return (
-              // <li className='flex justify-center items-center w-15' key={idx} style={{marginTop:"40px"}}>
-              // <Link
-              //   to={item.href}
-              //   smooth={true}
-              //   duration={500}
-              //   offset={-70}
-              //   onClick={()=> setIsOpen(false)}
-              //   className='cursor-pointer capitalize font-medium text-white-500 hover:scale-105 duration-200'
-              // >
-              //   {item.name}
-              // </Link>
-              // </li>
               <li
                 key={idx}
                 className="flex justify-center items-center w-15"

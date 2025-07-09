@@ -16,17 +16,28 @@ const Nav = () => {
               className="text-white hover:text-accent cursor-pointer"
               key={idx}
             >
-              <Link
-                to={item.href}
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                duration={400}
-                offset={-70}
-                className="transition-all duration-300"
-              >
-                {item.name}
-              </Link>
+              {item.external ? (
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cursor-pointer capitalize font-medium text-white-500 hover:scale-105 duration-200"
+                >
+                  {item.name}
+                </a>
+              ) : (
+                <Link
+                  to={item.href}
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  duration={400}
+                  offset={-70}
+                  className="transition-all duration-300"
+                >
+                  {item.name}
+                </Link>
+              )}
             </li>
           );
         })}
