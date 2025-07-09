@@ -2,7 +2,7 @@ const Project = ({ item }) => {
   return (
     <div
       key={item.id}
-      className="flex flex-col items-start text-left drop-shadow-lg p-3 rounded w-full max-w-[320px] h-[520px] overflow-hidden"
+      className="flex flex-col items-left text-left drop-shadow-lg p-3 rounded w-full max-w-[320px] h-[520px] overflow-hidden"
     >
       {/* Image */}
       <div className="mb-4 h-[180px] w-full overflow-hidden flex justify-center items-center">
@@ -23,7 +23,7 @@ const Project = ({ item }) => {
       <p className="text-sm text-slate-700 mb-4">{item.despo}</p>
 
       {/* Buttons */}
-      <div className="flex justify-center gap-3 mt-auto">
+      <div className="flex justify-center sm:justify-left gap-3 mt-auto">
         {/* Source Code Button */}
         <a href={item.source} target="_blank" rel="noopener noreferrer">
           <button

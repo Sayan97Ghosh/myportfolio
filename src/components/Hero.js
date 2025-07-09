@@ -12,12 +12,12 @@ const Hero = () => {
     >
       <div className="container mx-auto h-full">
         <div className="flex items-center h-full pt-20">
-          <div className="flex-1 flex flex-col items-center lg:items-start scale-up-center">
+          <div className="flex-1 flex flex-col items-start scale-up-center">
             <p className="text-accent text-4xl  mb-[18px]">
               Hey, I'm Sayan Ghosh! 👋
             </p>
             <h1 className="text-4xl leading-[44px] md:text-5xl md:leading-tight lg:text-4xl lg:leading-[1.2] font-bold md:tracking-[10px] ">
-              I am a Full-Stack <br /> Web Developer.
+              Full-Stack Web Developer
             </h1>
             <p className="pt-4 pb-8 md:pt-6 md:pb-12 max-w-[480px] text-lg text-center lg:text-left"></p>
             <a
