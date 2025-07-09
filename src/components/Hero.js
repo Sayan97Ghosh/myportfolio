@@ -21,7 +21,7 @@ const Hero = () => {
             </h1>
             <p className="pt-4 pb-8 md:pt-6 md:pb-12 max-w-[480px] text-lg text-center lg:text-left"></p>
             <a
-              href="https://drive.google.com/file/d/11zx8PploSbQqmcll1WeMjbVCgD94NIYG/view"
+              href="https://drive.google.com/file/d/1QvC9PkYhvNrW88w0cZiNFyV74Ksqb39g/view"
               target="_blank"
               rel="noopener noreferrer"
             >
